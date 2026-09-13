@@ -64,6 +64,7 @@ body {
 
 img {
     width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -206,7 +207,7 @@ textarea {
 .hero h1 {
     color: var(--navy);
 
-    font-size: clamp(3rem, 5.5vw, 5.1rem);
+    font-size: clamp(2.8rem, 7vw, 5.5rem);
 
     line-height: 1.02;
 
@@ -1666,4 +1667,32 @@ h2 em {
         flex-direction: column;
         gap: 15px;
     }
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 2px solid var(--violet);
+    outline-offset: 3px;
+}
+input,
+textarea,
+select {
+    width: 100%;
+    font: inherit;
+}
+
+textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--violet);
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.12);
 }
