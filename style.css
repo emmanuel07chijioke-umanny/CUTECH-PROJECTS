@@ -704,7 +704,11 @@ h2 em {
 }
 
 
+/* ---------- FIX: FEATURE TEXT ALIGNMENT ---------- */
+
 .feature-points p {
+    grid-column: 2;
+
     font-size: 0.8rem;
 
     margin-top: 3px;
@@ -916,7 +920,11 @@ h2 em {
 }
 
 
+/* ---------- FIX: PRINCIPLE TEXT ALIGNMENT ---------- */
+
 .principle-list p {
+    grid-column: 2;
+
     max-width: 520px;
 
     font-size: 0.86rem;
@@ -1472,6 +1480,8 @@ h2 em {
 }
 
 
+/* ---------- MOBILE ---------- */
+
 @media (max-width: 620px) {
 
     .nav-container {
@@ -1545,6 +1555,7 @@ h2 em {
 
     .intro-grid {
         grid-template-columns: 1fr;
+
         gap: 10px;
     }
 
@@ -1556,12 +1567,41 @@ h2 em {
 
     .premium-service {
         grid-template-columns: 40px 1fr;
+
         gap: 15px;
     }
 
 
     .premium-service > a {
         display: none;
+    }
+
+
+    /* ---------- FIX: FEATURE ALIGNMENT ON MOBILE ---------- */
+
+    .feature-points > div {
+        grid-template-columns: 40px 1fr;
+
+        gap: 15px;
+    }
+
+
+    .feature-points p {
+        grid-column: 2;
+    }
+
+
+    /* ---------- FIX: PRINCIPLE ALIGNMENT ON MOBILE ---------- */
+
+    .principle-list > div {
+        grid-template-columns: 40px 1fr;
+
+        gap: 15px;
+    }
+
+
+    .principle-list p {
+        grid-column: 2;
     }
 
 
@@ -1603,6 +1643,7 @@ h2 em {
 
     .form-row {
         grid-template-columns: 1fr;
+
         gap: 0;
     }
 
@@ -1623,8 +1664,6 @@ h2 em {
 
     .footer-bottom {
         flex-direction: column;
-
-        gap: 5px;
+        gap: 15px;
     }
-
 }
