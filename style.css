@@ -64,6 +64,7 @@ body {
 
 img {
     width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
 }
@@ -135,7 +136,7 @@ textarea {
     font-size: 0.82rem;
     font-weight: 700;
 
-    padding: 10px 15px;
+    padding: 8px 10px;
 
     border-radius: 5px;
 
@@ -1286,6 +1287,8 @@ h2 em {
 .form-field input:focus,
 .form-field textarea:focus {
     border-color: var(--violet);
+    box-shadow: 0 0 0 3px
+    rgba(115, 82, 184, 0, 12);
 }
 
 
